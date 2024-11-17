@@ -17,8 +17,12 @@ function App() {
     <>
      
       <h1>Users Management System</h1>
-
       <h2>Length of users {users.length}</h2>
+      <div>
+        {
+          users.map(user =><p key={user.id}> {user.id}: {user.name}: {user.email}</p>)
+        }
+      </div>
    
     </>
   )
